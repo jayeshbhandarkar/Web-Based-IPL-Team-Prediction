@@ -22,8 +22,8 @@ To do so:-
 ----
 `STEP 2` - Cloning the Repository :
 ```
-    git clone https://github.com/jayeshbhandarkar/IPL-Team-Prediction.git
-    cd IPL-Team-Prediction
+    git clone https://github.com/jayeshbhandarkar/Web-Based-IPL-Team-Prediction.git
+    cd Web-Based-IPL-Team-Prediction
 ```
 ----
 `STEP 3` - Installing all the Dependancies :
