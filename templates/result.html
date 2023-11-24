@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get the second table header element
+            var headerCell1 = document.querySelector("table th:nth-child(1)");
+            if (headerCell1){
+                headerCell1.textContent = "Sr"
+            }
+            var headerCell = document.querySelector("table th:nth-child(2)");
+
+            // Check if the headerCell is found
+            if (headerCell) {
+                // Change the text content of the header cell
+                headerCell.textContent = "Players";
+            }
+        });
+    </script>
+</head>
+<body>
+
+<!-- IPL Banner - 1 -->
+<div class='ipl-banner-left'>
+
+    <div class="slider-frame">
+        <div class="slide-images-up">
+
+            <!-- Image-1 -->
+            <div class="image-container">
+                <img class="image-width" src="{{ url_for('static', filename='mi.jpg') }}" alt="Mumbai Indians">
+            </div>
+            <!-- Image-2 -->
+            <div class="image-container">
+                <img class="image-width" src="{{ url_for('static', filename='srh.png') }}" alt="Sunrisers Hyderabad">
+            </div>
+            <!-- Image-3 -->
+            <div class="image-container">
+                <img class="image-width" src="{{ url_for('static', filename='rcb.png') }}" alt="Royal Challengers Bangalore">
+            </div>
+            <!-- Image-4 -->
+            <div class="image-container">
+                <img class="image-width" src="{{ url_for('static', filename='dc.png') }}" alt="Delhi Capitals">
+            </div>
+            <!-- Image-5 -->
+            <div class="image-container">
+                <img class="image-width" src="{{ url_for('static', filename='rr.png') }}" alt="Rajasthan Royals">
+            </div>
+            <!-- Image-6 -->
+            <div class="image-container">
+                <img class="image-width" src="{{ url_for('static', filename='gt.jpg') }}" alt="Gujarat Titans">
+            </div>
+            <!-- Image-7 -->
+            <div class="image-container">
+                <img class="image-width" src="{{ url_for('static', filename='kxip.png') }}" alt="Kings XI Punjab">
+            </div>
+            <!-- Image-8 -->
+            <div class="image-container">
+                <img class="image-width" src="{{ url_for('static', filename='csk.png') }}" alt="Chennai Super Kings">
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+    <h2>Final Predicted Team</h2>
+    {{ predicted_team | safe }}
+
+<!-- IPL Banner - 2 -->
+<div class='ipl-banner-right'>
+
+    <div class="slider-frame">
+        <div class="slide-images-down">
+
+            <!-- Image-1 -->
+            <div class="image-container">
+                <img class="image-width" src="{{ url_for('static', filename='mi.jpg') }}" alt="Mumbai Indians">
+            </div>
+            <!-- Image-2 -->
+            <div class="image-container">
+                <img class="image-width" src="{{ url_for('static', filename='srh.png') }}" alt="Sunrisers Hyderabad">
+            </div>
+            <!-- Image-3 -->
+            <div class="image-container">
+                <img class="image-width" src="{{ url_for('static', filename='rcb.png') }}" alt="Royal Challengers Bangalore">
+            </div>
+            <!-- Image-4 -->
+            <div class="image-container">
+                <img class="image-width" src="{{ url_for('static', filename='dc.png') }}" alt="Delhi Capitals">
+            </div>
+            <!-- Image-5 -->
+            <div class="image-container">
+                <img class="image-width" src="{{ url_for('static', filename='gt.jpg') }}" alt="Gujarat Titans">
+            </div>
+            <!-- Image-6 -->
+            <div class="image-container">
+                <img class="image-width" src="{{ url_for('static', filename='rr.png') }}" alt="Rajasthan Royals">
+            </div>
+            <!-- Image-7 -->
+            <div class="image-container">
+                <img class="image-width" src="{{ url_for('static', filename='kxip.png') }}" alt="Kings XI Punjab">
+            </div>
+            <!-- Image-8 -->
+            <div class="image-container">
+                <img class="image-width" src="{{ url_for('static', filename='csk.png') }}" alt="Chennai Super Kings">
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

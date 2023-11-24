@@ -1,0 +1,267 @@
+/* Add your custom styles here */
+/* Navbar */
+/* Navbar styles */
+.navbar {
+    background-color: #00ff00 !important; /* Green background for the navbar, !important to override Bootstrap styles */
+  }
+  
+  /* Navbar brand styles */
+  .navbar-brand {
+    color: #fff !important; /* White text color for the brand */
+  }
+  
+  /* Navbar toggler icon color */
+  .navbar-toggler-icon {
+    background-color: #000; /* Black color for the toggler icon */
+  }
+  
+  /* Navbar link styles */
+  .navbar-nav .nav-link {
+    color: #fff !important; /* White text color for navbar links */
+  }
+  
+  /* Dropdown menu styles */
+  .dropdown-menu {
+    background-color: #ff0000; /* Red background for the dropdown menu */
+  }
+  
+  /* Dropdown item styles */
+  .dropdown-item {
+    color: #fff !important; /* White text color for dropdown items */
+  }
+  
+  /* Dropdown item hover styles */
+  .dropdown-item:hover {
+    background-color: greenyellow; /* Green background on hover for dropdown items */
+    color: #000 !important; /* Black text color on hover for dropdown items */
+  }
+    
+  /* Navbar styles */
+  .navbar {
+    background-color: #00ff00 !important; /* Green background for the navbar, !important to override Bootstrap styles */
+  }
+  
+  /* Navbar brand styles */
+  .navbar-brand {
+    color: #fff !important; /* White text color for the brand */
+  }
+  
+  /* Navbar toggler icon color */
+  .navbar-toggler-icon {
+    background-color: rgb(0, 0, 0); /* White color for the toggler icon */
+  }
+  
+  /* Navbar link styles */
+  .navbar-nav .nav-link {
+    color: #fff !important; /* White text color for navbar links */
+  }
+  
+  /* Dropdown menu styles */
+  .dropdown-menu {
+    background-color: white; /* Red background for the dropdown menu */
+  }
+  
+  /* Dropdown item styles */
+  .dropdown-item {
+    color: green !important; /* White text color for dropdown items */
+  }
+ 
+  /* Dropdown item hover styles */
+  @media (max-width: 768px) {
+    /* Adjust styles for mobile view */
+    .navbar-toggler {
+      background-color: #000000 !important; /* Green background for the toggler button in mobile view */
+    }
+    .navbar-collapse {
+      background-color: #ff0000; /* Red background for the collapsed navbar in mobile view */
+    }
+
+    .navbar {
+        background-color: #00ff00 !important; /* Green background for the navbar, !important to override Bootstrap styles */
+      }
+  }
+  /* Body*/
+  #body {
+    background-color: #f8f9fa;
+    background-image: url('bgimage.png'); /* Replace 'bg.png' with the path to your image */
+
+    /* Set background size and position */
+    background-size: 250% 250%; /* Adjust width and height as needed */
+    background-position: center 10%;
+  
+    /* Add transparency to the background color */
+    background-color: rgba(12, 2, 2, 0.744); /* 0.5 is the alpha value for 50% transparency */
+
+    
+    
+    /* Set other styles as needed */
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color:rgb(191, 3, 3) !important; /* Override Bootstrap's default background color */
+}
+
+/*Options*/
+
+  /* Add styles for the button when hovered */
+button {
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+  #bt{
+    padding-top: 20px;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #00070b;
+    border: 3px solid green; /* Green border color on hover */
+    border-radius: 5px;
+  }
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* Add animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1s;
+}
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #212529;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-toggler-icon {
+    background-color: rgb(5, 5, 5);
+    border: 4px;
+}
+
+/* Form styles */
+form {
+    margin-top: 30px;
+}
+
+#select {
+    margin-bottom: 20px;  
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: 3px solid rgb(26, 121, 9);
+    border-radius: 5px;
+    transition: 0.3s;
+    width: 200px;
+}
+
+select:hover {
+    padding: 8px;
+    font-size: 16px;
+    border: 3px solid rgb(41, 138, 24);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Options */
+/* Basic reset for default styles */
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.option{
+    background-color: green;
+}
+
+/* Arrow icon for the dropdown */
+.custom-select::after {
+    content: '\25BC'; /* Unicode character for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: rgb(29, 123, 6);
+}
+
+/* Style on hover/focus */
+.custom-select:hover,
+.custom-select:focus {
+    border-color: #186e10e2;
+    box-shadow: 0 0 10px rgba(11, 123, 37, 0.512);
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+
+.container
+{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-size: 100% 100%;
+    position: absolute;
+	  top: 140px;
+    right: 50px;
+    left: 50px;
+}
+
+.form
+{
+    color: #666;
+    height: auto;
+    width: 500px;
+    box-shadow: 3px 3px 3px rgb(202, 201, 201),
+                -3px -3px 3px rgb(218, 217, 217);
+    overflow: auto;
+    margin: auto;
+    margin-bottom: 10rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+}

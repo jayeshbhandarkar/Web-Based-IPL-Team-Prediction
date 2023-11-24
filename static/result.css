@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    /* background-image: url('bgimage.png'); */
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5em;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px 0 0 0;
+}
+
+/* Hide only the table header row, not the first row of data */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media only screen and (min-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    table {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        max-width: 1200px;
+    }
+}

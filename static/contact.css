@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.contact-parent{
+    background: #fff;
+    display:flex;
+    margin:80px 0;
+    width: 70%; /* Adjust the width as needed */
+    margin: auto; /* Center the child container */
+}
+
+.contact-child{
+    display:flex;
+    flex:2;
+    box-shadow:0px 0px 10px -2px rgba(12, 255, 8, 0.75);
+    border-radius: 20px;
+    
+}
+
+.child1{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(9, 9, 9, 0.7)),url('https://th.bing.com/th/id/OIP.zyUUQjruvAqo8PAt8dLPOgAAAA?rs=1&pid=ImgDetMain');
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    color:#fff;
+    padding:100px 0;
+}
+
+.child1 p{
+    padding-left:20%;
+    font-size:20px;
+    text-shadow:0px 0px 2px #000;
+    
+}
+
+.child1 p span{
+    font-size:16px;
+    color:#9df2fd;
+}
+
+.child2{
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center; 
+}
+
+input[type="text"],
+    textarea {
+        transition: box-shadow 0.3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    input[type="text"]:hover,
+    textarea:hover {
+        box-shadow: 0 0 10px rgba(144, 238, 144, 0.8);
+    }
+
+.inside-contact{
+    width:90%;
+    margin:0 auto;
+    color:green;
+}
+
+.inside-contact h2{
+    text-transform:uppercase;
+    text-align:center;
+    margin-top:50px;
+}
+
+.inside-contact h3{
+    text-align:center;
+    font-size:16px;
+    color:#0085e2;
+}
+
+.inside-contact input, .inside-contact textarea{
+    width:100%;
+    background-color:#eee;
+    border:1px solid green;
+    padding:5px 10px;
+    margin-bottom:20px;
+    
+}
+
+.inside-contact input[type=submit]{
+    background-color:green;
+    color:#fff;
+    transition:0.2s;
+    border:2px solid green;
+    margin:30px 0;
+    border-radius: 10px;
+}
+
+.inside-contact input[type=submit]:hover{
+    background-color:#fff;
+    color:#000;
+    transition:0.2s;
+    border-radius: 10px;
+}
+
+
+
+@media screen and (max-width:991px){
+    .contact-parent{
+        display:block;
+        width: 80%; /* Adjust the width as needed */
+        margin: auto; /* Center the child container */
+    }
+
+    .child1{
+        display:none;
+       
+    }
+    .inside-contact{
+        width: 80%; /* Adjust the width as needed */
+        margin: 0 auto;
+        color:rgb(255, 255, 255);
+    }
+
+    .child2{
+        background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(9, 9, 9, 0.7)),url('https://th.bing.com/th/id/OIP.zyUUQjruvAqo8PAt8dLPOgAAAA?rs=1&pid=ImgDetMain');
+    }
+
+    .inside-contact input, .inside-contact textarea{
+        background-color:#fff;
+       
+    }
+}

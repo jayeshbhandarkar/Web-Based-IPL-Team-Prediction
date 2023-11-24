@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+      <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+      <!-- Bootstrap CSS -->
+      <!-- Bootstrap JS (use the correct path or CDN for your project) -->
+      <!-- Bootstrap JS from CDN -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+      <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+          <script src="{{ url_for('static', filename='js/test.js') }}"></script>
+      <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
+
+      <title> {% block title %} {% endblock title %} - IPl Dream 11 Team Prediction</title>
+  </head>
+  
+  <body class="light" id="body">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#"><b>Dream Team Predictor</b></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                  <ul class="navbar-nav">
+                    
+                      <!-- Dropdown menu -->
+                      <li class="nav-item dropdown">
+                          <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              Menu
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="http://127.0.0.1:5000/index">Home</a></li>
+                              <li><a class="dropdown-item" href="#">About</a></li>
+                              <li><a class="dropdown-item" href="{{ url_for('contact') }}">Contacts</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    </header>
+    
+    <!-- IPL Banner - 1 -->
+    <div class='ipl-banner-left'>
+
+        <div class="slider-frame">
+            <div class="slide-images-up">
+
+                <!-- Image-1 -->
+                <div class="image-container">
+                    <img class="image-width" src="{{ url_for('static', filename='mi.jpg') }}" alt="Mumbai Indians">
+                </div>
+                <!-- Image-2 -->
+                <div class="image-container">
+                    <img class="image-width" src="{{ url_for('static', filename='srh.png') }}" alt="Sunrisers Hyderabad">
+                </div>
+                <!-- Image-3 -->
+                <div class="image-container">
+                    <img class="image-width" src="{{ url_for('static', filename='rcb.png') }}" alt="Royal Challengers Bangalore">
+                </div>
+                <!-- Image-4 -->
+                <div class="image-container">
+                    <img class="image-width" src="{{ url_for('static', filename='dc.png') }}" alt="Delhi Capitals">
+                </div>
+                <!-- Image-5 -->
+                <div class="image-container">
+                    <img class="image-width" src="{{ url_for('static', filename='rr.png') }}" alt="Rajasthan Royals">
+                </div>
+                <!-- Image-6 -->
+                <div class="image-container">
+                    <img class="image-width" src="{{ url_for('static', filename='gt.jpg') }}" alt="Gujarat Titans">
+                </div>
+                <!-- Image-7 -->
+                <div class="image-container">
+                    <img class="image-width" src="{{ url_for('static', filename='kxip.png') }}" alt="Kings XI Punjab">
+                </div>
+                <!-- Image-8 -->
+                <div class="image-container">
+                    <img class="image-width" src="{{ url_for('static', filename='csk.png') }}" alt="Chennai Super Kings">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+      <center>
+        <div class="container">
+            <div class="form">
+                <br><h4 style="color:red"><b>IPL Team Predictor</b></h4>
+            <form method="POST">
+              <div id="select" align="center">
+                  <select name="team1" class="custom-select">
+                      <option >Select Team 1</option>
+                      <option value="MI">Mumbai Indians</option>
+                      <option value="CSK">Chennai Super Kings</option>
+                      <option value="PBKS">Punjab Kings</option>
+                      <option value="DC">Delhi Capitals</option>
+                      <option value="KKR">Kolkata Knight Riders</option>
+                      <option value="RR">Rajasthan Royals</option>
+                      <option value="RCB">Royal Challengers Bangalore</option>
+                      <option value="SRH">Sunrisers Hyderabad</option>
+                      <option value="GT">Gujarat Titans</option>
+                      <option value="LSG">Lucknow Supergaints</option>
+                  </select>
+              </div>
+              <br>
+              <div>
+                  <select name="team2" class="custom-select">
+                      <option >Select Team 2</option>
+                      <option value="MI">Mumbai Indians</option>
+                      <option value="CSK">Chennai Super Kings</option>
+                      <option value="PBKS">Punjab Kings</option>
+                      <option value="DC">Dehli Capitals</option>
+                      <option value="KKR">Kolkata Knight Riders</option>
+                      <option value="RR">Rajasthan Royals</option>
+                      <option value="RCB">Royal Challengers Bangalore</option>
+                      <option value="SRH">Sunrisers Hyderabad</option>
+                      <option value="GT">Gujarat Titans</option>
+                      <option value="LSG">Lucknow Supergaints</option>
+                  </select>
+              </div>
+              <br><br>
+              <div>
+                  <select name="venue" class="custom-select">
+                      <option >Select Venue</option>
+                      <option value="1">Narendra Modi Stadium, Ahmedabad</option>
+                      <option value="2">M. Chinnaswamy Stadium, Bengaluru</option>
+                      <option value="3">M. A. Chidambaram Stadium, Chennai</option>
+                      <option value="4">Arun Jaitley Stadium, Dehli</option>
+                      <option value="5">Himachal Pradesh Cricket Association Stadium, Dharamshala</option>
+                      <option value="6">Assam Cricket Association Stadium, Guhawati</option>
+                      <option value="7">Rajiv Gandhi International Cricket Stadium, Hyderabad</option>
+                      <option value="8">Sawai Mansingh Stadium, Jaipur</option>
+                      <option value="9">Ekana Cricket Stadium, Lucknow</option>
+                      <option value="10">Inderjit Singh Bindra Stadium, Mohali</option>
+                      <option value="11">Wankhede Stadium, Mumbai</option>
+                      <option value="12">Eden Gardens, Kolkata</option>
+                  </select>
+              </div>
+              <div id="bt">
+                  <button type="submit">Submit</button>
+              </div>
+              <br>
+            </form>
+            </div>
+        </div>
+
+    <!-- IPL Banner - 2 -->
+    <div class='ipl-banner-right'>
+
+        <div class="slider-frame">
+            <div class="slide-images-down">
+
+                <!-- Image-1 -->
+                <div class="image-container">
+                    <img class="image-width" src="{{ url_for('static', filename='mi.jpg') }}" alt="Mumbai Indians">
+                </div>
+                <!-- Image-2 -->
+                <div class="image-container">
+                    <img class="image-width" src="{{ url_for('static', filename='srh.png') }}" alt="Sunrisers Hyderabad">
+                </div>
+                <!-- Image-3 -->
+                <div class="image-container">
+                    <img class="image-width" src="{{ url_for('static', filename='rcb.png') }}" alt="Royal Challengers Bangalore">
+                </div>
+                <!-- Image-4 -->
+                <div class="image-container">
+                    <img class="image-width" src="{{ url_for('static', filename='dc.png') }}" alt="Delhi Capitals">
+                </div>
+                <!-- Image-5 -->
+                <div class="image-container">
+                    <img class="image-width" src="{{ url_for('static', filename='gt.jpg') }}" alt="Gujarat Titans">
+                </div>
+                <!-- Image-6 -->
+                <div class="image-container">
+                    <img class="image-width" src="{{ url_for('static', filename='rr.png') }}" alt="Rajasthan Royals">
+                </div>
+                <!-- Image-7 -->
+                <div class="image-container">
+                    <img class="image-width" src="{{ url_for('static', filename='kxip.png') }}" alt="Kings XI Punjab">
+                </div>
+                <!-- Image-8 -->
+                <div class="image-container">
+                    <img class="image-width" src="{{ url_for('static', filename='csk.png') }}" alt="Chennai Super Kings">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+      
+      </center>      
+      <script src="script.js"></script>
+
+  </body>
+  <footer>
+    <p>&copy; 2023 Dream11 Team Predictor | All rights reserved.</p>
+  </footer>
+</html>
+  

@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.person {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.person img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.person-info {
+    flex-grow: 1;
+}
+
+@media (max-width: 600px) {
+    .person {
+        flex-direction: column;
+    }
+}

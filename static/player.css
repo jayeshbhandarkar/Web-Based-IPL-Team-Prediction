@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url('bgimage.png'); */
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-container {
+    width: 48%;
+    margin: 0 1%;
+}
+
+.team-container:last-child {
+    margin: 0;
+}
+
+.player-item {
+    margin-bottom: 10px;
+}
+
+.player-checkbox {
+    margin-right: 5px;
+}
+
+.count {
+    display: inline-block;
+    margin-left: 5px;
+    color: green;
+    font-weight: bold;
+}
+
+/* Add style to change the background color when checked */
+.player-item input[type="checkbox"]:checked + span {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: center;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffffff;
+    border: 2px solid #4CAF50;
+    color: black;
+}
