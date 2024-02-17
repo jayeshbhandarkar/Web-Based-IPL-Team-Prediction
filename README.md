@@ -3,7 +3,7 @@
 # Project Title : IPL Fantasy Cricket Dream 11 Team Predictor
 
 ## Project Overview
-IPL Fantasy Cricket Dream 11 Team Predictor is a Flask Web Application that predicts the best fantasy cricket team based on player's previous records. 
+IPL Fantasy Cricket Dream 11 Team Prediction Project is a Flask Web Application that Predicts the Best Fantasy Cricket Team using Machine Learning, based on Match Venue, Player's Statistics and Previous Data of each player from 2008 to 2023. 
 
 ## Prerequisites
 Before you begin, ensure you have the following installed:
