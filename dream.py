@@ -79,7 +79,7 @@ dc_fp = {'Aman Khan':111,'DA Warner':111, 'A Nortje':111,'AR Patel':111, 'C Saka
 #TEAM 6
 rcb= ['V Kohli' , 'GJ Maxwell' ,  'Mohammed Siraj',  'JR Hazlewood' ,'RM Patidar' , 'Anuj Rawat' , 'Shahbaz Ahmed',  'KD Karthik' ,'KV Sharma' , 'Wanindu Hasaranga' ,  'HV Patel' ]
 
-rcb_fp = { 'V Kohli':414, 'GJ Maxwell':392, 'Shahbaz Ahmed':194,
+rcb_fp = { 'V Kohli':414, 'GJ Maxwell':392, 'Shahbaz Ahmed':194, 'Faf Duplesis':350,
                'DT Christian':47, 'HV Patel':634, 'Mohammed Siraj':275, 'Akash Deep':111 , 'Anuj Rawat':111 , 'DJ Willey':111 ,
                'KD Karthik':111 , 'FA Allen':111 , 'JR Hazlewood':111 , 'KV Sharma':111 , 'MK Lomror':111 , 'RM Patidar':111 , 'S Kaul':111 ,
                'SS Prabhudessai':111 , 'Wanindu Hasaranga':111 , 'Sonu Yadav':111 , 'Avinash Singh':111 , 'Rajan Kumar':111 , 'Manoj Bhandage':111 ,
