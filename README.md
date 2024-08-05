@@ -11,6 +11,7 @@ IPL Fantasy Cricket Dream 11 Team Prediction Project is a Flask Web Application 
 
 ## Prerequisites
 Before you begin, ensure you have the following installed:
+Python 3.8 or Higher version
 
 Run following Commands.
 
