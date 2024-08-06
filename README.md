@@ -48,4 +48,11 @@ To do so:-
 
 `STEP 5` - Open Web-Browser (Chrome) and navigate to `http://127.0.0.1:5000/` to use this web-application.
 
+---
+
+## Screenshot
+- ### User Interface
+![Main Interface](static/user-interface.png)
+
+
 ⬤ Please do ⭐ the Repository, if it helped you in anyway.
