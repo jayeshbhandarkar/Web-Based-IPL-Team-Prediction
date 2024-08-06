@@ -41,6 +41,7 @@ To do so:-
 ```
     python dream.py
 ```
+---
 
 `STEP 5` - Open Web-Browser (Chrome) and navigate to `http://127.0.0.1:5000/` to use this web-application.
 
