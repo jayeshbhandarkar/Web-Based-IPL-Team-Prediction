@@ -1,4 +1,4 @@
-# IPL-Team-Prediction
+# Web-Based-IPL-Team-Prediction
 
 # Project Title : IPL Fantasy Cricket Dream 11 Team Predictor
 
@@ -49,6 +49,5 @@ To do so:-
 ## Screenshot
 - ### User Interface
 ![Main Interface](static/user-interface.png)
-
 
 ⬤ Please do ⭐ the Repository, if it helped you in anyway.
