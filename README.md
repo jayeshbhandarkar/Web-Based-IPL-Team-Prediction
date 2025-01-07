@@ -47,10 +47,6 @@ To do so:-
 
 ---
 
-## Screenshot
-- ### User Interface
-![Main Interface](static/user-interface.png)
-
 ⬤ Please do ⭐ the Repository, if it helped you in anyway.
 
 ### 😊 Thankyou !! ✨
